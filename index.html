@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia - The Big Bang Theory</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="box">
+        <div class="title">
+            <h1>O quanto você conhece The Big Bang Theory?</h1>
+        </div>
+
+        <div class="about">
+            <p>Leonard e Sheldon podem lhe dizer tudo o que você quiser saber sobre física quântica. <br />
+                Mas eles não seriam capazes de lhe dizer nada sobre a vida "real", as relações diárias <br />
+                ou humanas... que movimentará o grupo de amigos, que conta ainda com as presenças de Howard e Raj,
+                um indiano que não consegue falar com
+                mulheres.</p>
+        </div>
+
+        <div class="tbbt_img">
+            <img
+                src="https://veja.abril.com.br/wp-content/uploads/2016/06/elenco-da-serie-the-big-bang-theory-original4.jpeg" />
+        </div>
+
+        <div class="user_form">
+            <span>
+                <h4 id="user"></h4>
+            </span>
+        </div>
+
+        <div class="questions_list">
+
+            <section>
+                <p>Segundo Sheldon, Leonard divide qual característica com tartarugas? </p>
+
+                <select name="tbbt_questions" class="select" id="question_1" onchange="atualizarSelect()">
+                    <option value="---"> --- </option>
+                    <option value="Velocidade">Velocidade</option>
+                    <option value="Coragem">Coragem</option>
+                    <option value="Perigo">Perigo</option>
+                    <option value="Tamanho">Tamanho</option>
+                </select>
+
+                <p>Para onde Leonard disse que iria para enganar o Sheldon e ir fazer uma cirurgia? </p>
+
+                <select name="tbbt_questions" class="select" id="question_2" onchange="atualizarSelect2()">
+                    <option value="---">---</option>
+                    <option value="Piscina">Piscina pública</option>
+                    <option value="Loja de histórias em quadrinhos">Loja de histórias em quadrinhos</option>
+                    <option value="Casa da mãe dele">Casa da mãe dele</option>
+                    <option value="Cinema">Cinema</option>
+                </select>
+
+                <p>Sheldon disse que algo iria deixar Leonard cego. O que era?</p>
+
+                <select name="tbbt_questions" class="select" id="question_3" onchange="atualizarSelect3()">
+                    <option value="---">---</option>
+                    <option value="Um chapéu de formatura">Um chapéu de formatura</option>
+                    <option value="Uma arma de brinquedo">Uma arma de brinquedo</option>
+                    <option value="Dinheiro plastificado">Dinheiro plastificado</option>
+                    <option value="Roupas sensuais da Penny">Roupas sensuais da Penny</option>
+                </select>
+
+                <p>Qual série Sheldon pergunta para Amy se ele deveria começar a assistir?</p>
+
+                <select name="tbbt_questions" class="select" id="question_4" onchange="atualizarSelect4()">
+                    <option value="---">---</option>
+                    <option value="Game of Thrones">Game of Thrones</option>
+                    <option value="Lost">Lost</option>
+                    <option value="Friends">Friends</option>
+                    <option value="The Flash">The Flash</option>
+                </select>
+
+                <p>Para quem Sheldon revela sua opinião sobre a mudança da interface do YouTube?</p>
+
+                <select name="tbbt_questions" class="select" id="question_5" onchange="atualizarSelect5()">
+                    <option value="---">---</option>
+                    <option value="Howard">Howard</option>
+                    <option value="Penny">Penny</option>
+                    <option value="Raj">Raj</option>
+                    <option value="Leonard">Leonard</option>
+                </select>
+            </section>
+
+            <div class="btn_start">
+                <button id="btn" onclick="showModal()">Conferir</button>
+
+                <div class="modal" id="modal">
+                    <div class="modal_content" id="modal_content">
+                    </div>
+                    <span onclick="hideModal()"><img src="./img/close.png" alt=""></span>;</span>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
