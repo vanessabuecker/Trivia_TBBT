@@ -43,21 +43,35 @@ function atualizarSelect5() {
     }
 }
 
+function atualizarSelect6() {
+    let select_question_6 = document.querySelector('#question_6');
+    if (select_question_6.value === "7ª") {
+        points++
+    }
+}
+
+function atualizarSelect6() {
+    let select_question_7 = document.querySelector('#question_7');
+    if (select_question_7.value === "7ª") {
+        points++
+    }
+}
+
 function showModal() {
     var element2 = document.getElementById('modal_content');
     var element = document.getElementById('modal');
     element.classList.add('show-modal');
 
-    if (points >= 4) {
+    if (points >= 5) {
         element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de ${points} pontos. <br/>Pode colocar The Big Bang Theory no seu currículo pois você é um expert no assunto!  🤓`
 
-    } else if (points === 3) {
+    } else if (points > 5 && points < 7) {
         element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de <b> ${points} pontos</b>. Você foi bem apesar de não ser um fã ávido da série. Tudo bem, nós entendemos. Ninguém aguenta os argumentos do Sheldon por muito tempo! 😅`
 
-    } else if (points > 3 && points < 5) {
+    } else if (points > 3 && points < 7) {
         element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>!  Você atingiu o total de <b> ${points} pontos</b>. Será que já você já assistiu The Big Band Theory ou está confundindo com How I Met Your Mother? 🤔Melhor sorte da próxima vez!`
 
-    } else if (points < 2) {
+    } else if (points <= 2) {
         element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de <b> ${points} pontos</b>. Será que já você já assistiu The Big Band Theory ou está confundindo com How I Met Your Mother? 🤔Melhor sorte da próxima vez!`
     }
 }
