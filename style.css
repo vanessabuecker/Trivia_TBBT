@@ -13,9 +13,10 @@ body {
 
 .box {
     margin-top: 4%;
+    margin-bottom: 2%;
     position: absolute;
     text-align: center;
-    top: 70%;
+    top: 71%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px;

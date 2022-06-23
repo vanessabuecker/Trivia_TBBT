@@ -63,15 +63,15 @@ function showModal() {
     element.classList.add('show-modal');
 
     if (points >= 5) {
-        element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de ${points} pontos. <br/>Pode colocar The Big Bang Theory no seu currículo pois você é um expert no assunto!  🤓`
+        element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de <b>${points} pontos</b>. <br/>Pode colocar The Big Bang Theory no seu currículo pois você é um expert no assunto!  🤓`
 
     } else if (points > 5 && points < 7) {
         element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de <b> ${points} pontos</b>. Você foi bem apesar de não ser um fã ávido da série. Tudo bem, nós entendemos. Ninguém aguenta os argumentos do Sheldon por muito tempo! 😅`
 
     } else if (points > 3 && points < 7) {
-        element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>!  Você atingiu o total de <b> ${points} pontos</b>. Será que já você já assistiu The Big Band Theory ou está confundindo com How I Met Your Mother? 🤔Melhor sorte da próxima vez!`
+        element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de <b> ${points} pontos</b>. Você foi bem apesar de não ser um fã ávido da série. Tudo bem, nós entendemos. Ninguém aguenta os argumentos do Sheldon por muito tempo! 😅`
 
-    } else if (points <= 2) {
+    } else if (points < 3) {
         element2.innerHTML = `<h1>Resultado</h1> <br/> Pois bem, <b> ${user_name}</b>! Você atingiu o total de <b> ${points} pontos</b>. Será que já você já assistiu The Big Band Theory ou está confundindo com How I Met Your Mother? 🤔Melhor sorte da próxima vez!`
     }
 }
